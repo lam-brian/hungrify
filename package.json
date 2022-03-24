@@ -1,0 +1,19 @@
+{
+  "name": "hungrify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Brian Lam",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.0"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

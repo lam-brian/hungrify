@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e539d5826b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" defer src="src/js/controller.js"></script>
+    <link rel="stylesheet" href="src/css/spinner.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Hungrify</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <a href="#" aria-label="home button">
+            <img
+              src="src/images/logo.svg"
+              alt="logo"
+              width="150"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+
+        <ul class="bookmarks">
+          <li class="bookmarks__list-item">
+            <button class="bookmarks__btn btn">
+              <i class="fa-solid fa-bookmark icon"></i> Bookmarks
+            </button>
+            <ul class="bookmarks__recipes">
+              <div class="bookmarks__error">
+                <p>No bookmarks found :(</p>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- SEARCH -->
+    <section class="search">
+      <form class="search__bar">
+        <button class="search__btn btn" aria-label="search button">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+        <input
+          type="text"
+          class="search__field"
+          placeholder="Search over 1,000,000 recipes..."
+        />
+      </form>
+    </section>
+    <!-- RECIPES -->
+    <main class="recipes">
+      <div class="recipes__intro">
+        <div class="recipe__message">
+          <h2 class="recipe__message-heading">Ready to Cook?</h2>
+          <p class="recipe__message-text">Start searching for a recipe!</p>
+        </div>
+        <div class="recipe__intro-img">
+          <img src="src/images/cooking.svg" alt="person cooking" />
+        </div>
+      </div>
+      <div class="recipe__results hidden"></div>
+      <div class="recipe__container hidden"></div>
+    </main>
+  </body>
+</html>
