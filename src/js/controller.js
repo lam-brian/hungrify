@@ -72,7 +72,7 @@ const controlAddBookmark = () => {
 };
 
 const controlBookmarks = function () {
-  bookmarksView.render(model.state.bookmarks);
+  bookmarksView.renderBookmarks(model.state.bookmarks);
 };
 
 const init = () => {
