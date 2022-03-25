@@ -390,10 +390,6 @@ body {
   background-color: var(--blue-primary);
 }
 
-.btn-bookmark--active:hover {
-  color: var(--grey);
-}
-
 .recipe__ingredients {
   margin-bottom: 2.4rem;
 }
