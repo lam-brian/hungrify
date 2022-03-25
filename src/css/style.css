@@ -15,9 +15,51 @@
 }
 
 /* ------general------- */
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #6ceafdc7 var(--blue-tint);
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html::-webkit-scrollbar-button {
+  display: none;
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--blue-tint);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #6ceafdc7;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #6ceafd9c;
+}
+
+.recipe__ingredient-list::-webkit-scrollbar {
+  width: 6px;
+}
+.recipe__ingredient-list::-webkit-scrollbar-button {
+  display: none;
+}
+.recipe__ingredient-list::-webkit-scrollbar-track {
+  background-color: var(--blue-primary);
+}
+
+.recipe__ingredient-list::-webkit-scrollbar-thumb {
+  background-color: #6ceafdc7;
+  border-radius: 10px;
+}
+
+.recipe__ingredient-list::-webkit-scrollbar-thumb:hover {
+  background-color: #6ceafd9c;
 }
 
 * {
@@ -255,7 +297,8 @@ body {
 }
 
 .preview {
-  width: 32rem;
+  /* width: 32rem; */
+  width: 100%;
   height: 30rem;
   /* padding-bottom: 2.4rem; */
   background-color: var(--blue-tint);
@@ -283,10 +326,11 @@ body {
   width: 100%;
   height: 22rem;
   object-fit: cover;
+  object-position: center;
 }
 
 .preview__data {
-  padding: 2.4rem;
+  padding: 2.4rem 1.2rem;
 }
 
 .pagination {
@@ -400,6 +444,8 @@ body {
 .recipe__ingredient-list {
   height: 25rem;
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #6ceafdc7 var(--blue-primary);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
