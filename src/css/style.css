@@ -137,7 +137,7 @@ body {
   color: #1b8797;
 }
 
-.bookmark__link--active {
+.bookmark__link.bookmark__link--active {
   background-color: #192e3b;
   color: #1b8797;
 }
