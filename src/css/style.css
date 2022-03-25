@@ -303,7 +303,8 @@ body {
   font-weight: var(--fw-semi-bold);
 }
 
-.btn--inline:hover {
+.btn--inline:hover,
+.btn--inline:active {
   color: var(--light-blue);
 }
 
@@ -364,7 +365,8 @@ body {
   font-size: 1.6rem;
 }
 
-.btn--tiny:hover {
+.btn--tiny:hover,
+.btn--tiny:active {
   color: rgba(205, 209, 212, 0.596);
 }
 
@@ -380,7 +382,8 @@ body {
   padding: 1.4rem;
 }
 
-.btn--round:hover {
+.btn--round:hover,
+.btn--round:active {
   color: var(--light-blue);
   background-color: var(--blue-primary);
 }
