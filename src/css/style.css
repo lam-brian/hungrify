@@ -122,12 +122,19 @@ body {
 .bookmark__link:link,
 .bookmark__link:visited {
   display: flex;
-  /* gap: 2.4rem; */
+  padding: 6px 8px;
+  border-radius: 8px;
   align-items: center;
-  /* justify-self: center; */
   text-decoration: none;
   font-size: 1.4rem;
   color: var(--light-blue);
+  transition: all 0.3s ease-out;
+}
+
+.bookmark__link:hover,
+.bookmark__link:active {
+  background-color: #192e3b;
+  color: #1b8797;
 }
 
 .bookmark__img {
