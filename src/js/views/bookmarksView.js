@@ -16,9 +16,13 @@ class BookmarksView extends View {
   }
 
   _generateMarkupPreview(result) {
+    const id = window.location.hash.slice(1);
+
     return `
       <li class="bookmark__item">
-            <a class="bookmark__link" href="#${result.id}">
+            <a class="bookmark__link ${
+              result.id === id ? "bookmark__link--active" : ""
+            }" href="#${result.id}">
               <figure class="bookmark__img">
                 <img src="${result.image}" alt="${result.title}" />
               </figure>

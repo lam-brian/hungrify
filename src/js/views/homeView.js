@@ -11,6 +11,8 @@ class HomeView extends View {
   }
 
   renderHomePage() {
+    window.location.hash = "#";
+
     const markup = `<div class="recipe__message">
         <h2 class="recipe__message-heading">Ready to Cook?</h2>
         <p class="recipe__message-text">Start searching for a recipe!</p>

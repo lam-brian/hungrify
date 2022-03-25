@@ -11,6 +11,8 @@ import { async } from "regenerator-runtime/runtime";
 
 const controlHomePage = () => {
   homeView.renderHomePage();
+
+  bookmarksView.update(model.state.bookmarks);
 };
 
 const controlRecipes = async () => {
@@ -18,6 +20,9 @@ const controlRecipes = async () => {
     const id = window.location.hash.slice(1);
 
     if (!id) return;
+
+    // 0) Update Bookmarks view
+    bookmarksView.update(model.state.bookmarks);
 
     recipeView.renderSpinner();
 
@@ -33,12 +38,16 @@ const controlRecipes = async () => {
 
 const controlSearchResults = async () => {
   try {
+    // 0) Update Bookmarks view
+    bookmarksView.update(model.state.bookmarks);
+
     resultsView.renderSpinner();
     // 1) Get search query
     const query = searchView.getQuery();
     if (!query) throw new Error("Please enter a recipe");
 
     // 2) Load search results
+
     await model.loadSearchResults(query);
 
     // 3) render results
