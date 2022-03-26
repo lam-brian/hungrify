@@ -94,10 +94,12 @@ body {
 
 .header {
   background-color: var(--blue-tint);
-  padding: 1.2rem 9.6rem;
+  padding: 1.2rem 2.4rem;
 }
 
 .header__nav {
+  max-width: 180rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,10 +247,11 @@ body {
 
 /* ------Recipes------- */
 
+/* intro */
 .recipes {
   max-width: 160rem;
   margin: 0 auto;
-  padding: 1.2rem 4.8rem 2.4rem;
+  padding: 1.2rem 4.8rem;
 }
 
 .recipes__intro {
@@ -266,6 +269,10 @@ body {
   height: 60rem;
 }
 
+.recipe__message {
+  justify-self: start;
+}
+
 .recipe__message-heading {
   font-size: 6.4rem;
   color: var(--light-blue);
@@ -278,6 +285,7 @@ body {
   color: #fff;
   font-size: 4.8rem;
   font-weight: var(--fw-semi-bold);
+  max-width: 48rem;
 }
 
 /* Searched Recipe */
@@ -288,7 +296,7 @@ body {
   align-items: center;
   justify-items: center;
   list-style: none;
-  gap: 4.8rem;
+  gap: 3.2rem;
 }
 
 .preview__link {
@@ -297,10 +305,8 @@ body {
 }
 
 .preview {
-  /* width: 32rem; */
   width: 100%;
-  height: 30rem;
-  /* padding-bottom: 2.4rem; */
+  height: 34rem;
   background-color: var(--blue-tint);
   border-radius: 1.2rem;
   overflow: hidden;
@@ -322,20 +328,24 @@ body {
   color: var(--light-blue-tint);
 }
 
+.preview__fig {
+  height: 28rem;
+}
+
 .preview__fig img {
   width: 100%;
-  height: 22rem;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .preview__data {
-  padding: 2.4rem 1.2rem;
+  padding: 1.4rem;
 }
 
 .pagination {
   text-align: center;
-  margin-top: 2.4rem;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +374,7 @@ body {
 }
 
 .recipe__fig {
-  max-height: 40rem;
+  height: 40rem;
 }
 
 .recipe__title {
