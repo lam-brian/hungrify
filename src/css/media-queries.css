@@ -199,3 +199,26 @@
     padding: 0 2.4rem;
   }
 }
+
+@media (max-width: 30em) {
+  .header {
+    padding: 1.6rem;
+  }
+
+  .search {
+    padding: 0 1.6rem;
+    margin-top: 1.6rem;
+  }
+
+  .recipes {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .recipe__results-list {
+    gap: 1.6rem;
+  }
+
+  .preview__fig {
+    height: 23rem;
+  }
+}
