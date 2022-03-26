@@ -95,6 +95,11 @@
     grid-column: 2;
     grid-row: 1;
   }
+
+  .recipe__ingredient-list {
+    overflow: visible;
+    height: 100%;
+  }
 }
 
 /* BELOW 628px */
@@ -160,7 +165,7 @@
   }
 }
 
-/* BELOW 542 */
+/* BELOW 542px */
 
 @media (max-width: 34em) {
   .search {
@@ -168,7 +173,7 @@
   }
 
   .recipe__container {
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .recipe__img-box {
@@ -178,9 +183,9 @@
 
   .recipe__details {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 4.4rem;
+    /* gap: 4.4rem; */
     max-width: 100%;
   }
 
