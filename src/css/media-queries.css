@@ -185,7 +185,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 4.4rem; */
     max-width: 100%;
   }
 
