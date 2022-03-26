@@ -10,6 +10,8 @@
   "author": "Brian Lam",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.4.0",
+    "@parcel/transformer-webmanifest": "^2.4.0",
     "parcel": "^2.4.0"
   },
   "dependencies": {
