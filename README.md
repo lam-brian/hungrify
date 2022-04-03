@@ -10,6 +10,10 @@ A single page application where a user can search all kinds of recipes to try ou
 
 HTML5, CSS3, JavaScript
 
+## API used
+
+[Forkify](https://forkify-api.herokuapp.com/v2)
+
 ## Learning Objectives
 
 - Build a single page application using only html, css, and javascript
@@ -19,5 +23,5 @@ HTML5, CSS3, JavaScript
 
 ## How to run
 
-run npm install to download all dependecies
-after all dependencies have been installed, run npm start
+- run npm install to download all dependecies
+- after all dependencies have been installed, run npm start
