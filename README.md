@@ -1,6 +1,6 @@
 # hungrify-app
 
-demo: https://hungrify.netlify.app/
+[Demo](https://hungrify.netlify.app/)
 
 ## Introduction
 
