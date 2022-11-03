@@ -1,4 +1,4 @@
-# hungrify-app
+# Hungrify
 
 [Demo](https://hungrify.netlify.app/)
 
